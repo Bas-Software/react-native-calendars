@@ -56,7 +56,7 @@ function createNpmRc() {
   exec.execSync('rm -f package-lock.json');
   const content = `
 email=\${NPM_EMAIL}
-//registry.npmjs.org/:_authToken=\${NPM_TOKEN}
+  //registry.npmjs.org/:_authToken=\${NPM_TOKEN}
 `;
   fs.writeFileSync('.npmrc', content);
 }
